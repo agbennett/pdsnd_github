@@ -8,7 +8,7 @@
 The project requests user input for bikeshare data from one of the following cities,
 Chicago, Washington or New York City. It then runs analytics on the data based on the time window prescribed by the user.
 
-The project only accepts data for those three cities. 
+The project only accepts data for those three cities.
 
 ### Files used
 bikeshare.py
@@ -18,3 +18,4 @@ new_york_city.csv
 
 ### Credits
 Udacity creating the project prompt, organizing and providing the necessary bike share data.
+Credits should go to bdougie at https://github.com/github/gitignore whose git ignore templates helped me understand how to modify a git ignore file. 
