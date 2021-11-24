@@ -109,7 +109,7 @@ def time_stats(df):
 
     Returns:
         No returned data.
-        Data is output directly to the user screen. 
+        Data is output directly to the user screen.
     """
 
     months = df['Start Time'].dt.month.to_numpy()
@@ -185,7 +185,15 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+    Args:
+        (df) data frame - bike share data for a city during a window of time
+
+    Returns:
+        No returned data.
+        Data is output directly to the user screen. 
+    """
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     if df.empty:
