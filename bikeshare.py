@@ -101,7 +101,17 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel.
+
+    Args:
+        (df) data frame - bike share data for a city during a window of time
+
+    Returns:
+        No returned data.
+        Data is output directly to the user screen.
+    """
+
     months = df['Start Time'].dt.month.to_numpy()
     days = df['Start Time'].dt.dayofweek.to_numpy()
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -175,7 +185,15 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+    Args:
+        (df) data frame - bike share data for a city during a window of time
+
+    Returns:
+        No returned data.
+        Data is output directly to the user screen. 
+    """
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     if df.empty:
